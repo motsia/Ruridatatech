@@ -41,6 +41,8 @@ body {
 
   /* Core services tilted box style */
 .tilted-box {
+  display: flex;
+  flex-direction: column;
   background-color: #ef8172; /* Light background for the box */
   border: 1px solid #ddd; /* Optional border */
   padding: 20px;
