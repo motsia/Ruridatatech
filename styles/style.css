@@ -38,31 +38,79 @@ body {
     }
   }
 
-  
-  .tilted-image {
-    transform: rotate(-5deg); /* Adjust angle here */
-    transition: transform 0.3s ease;
-  }
 
-  .tilted-image:hover {
-    transform: rotate(0deg); /* Straightens when hovered */
-  }
+  /* Core services tilted box style */
+.tilted-box {
+  background-color: #ef8172; /* Light background for the box */
+  border: 1px solid #ddd; /* Optional border */
+  padding: 20px;
+  transform: rotate(-5deg); /* Tilt the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: transform 0.3s ease;
+  max-width: 90%; /* Ensure the box fits within the screen width */
+  margin: 20px auto; /* Center the box and add spacing */
+}
 
- 
-/* For boxes-Style for cores services */
+.tilted-box:hover {
+  transform: rotate(0deg); /* Straightens the box on hover */
+}
+
+.tilted-box h3 {
+  font-size: 1.5rem; /* Adjust heading size */
+  margin-bottom: 10px;
+  color: white; /* Ensure text is readable */
+}
+
+.tilted-box ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+
+.tilted-box ul li {
+  font-size: 1rem; /* Adjust font size */
+  margin-bottom: 8px;
+  color: white; /* Ensure text is readable */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
   .tilted-box {
-    background-color: #ef8172; /* Light background for the box */
-    border: 1px solid #ddd; /* Optional border */
-    padding: 20px;
-    transform: rotate(-5deg); /* Tilt the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    transition: transform 0.3s ease;
+    transform: rotate(0deg); /* Remove tilt for smaller devices */
+    padding: 15px; /* Reduce padding for a compact look */
+    max-width: 95%; /* Take more space on smaller devices */
   }
 
   .tilted-box:hover {
-    transform: rotate(45deg); /* Straightens the box on hover */
+    transform: scale(1.05); /* Slight zoom effect instead of tilting */
   }
 
+  .tilted-box h3 {
+    font-size: 1.25rem; /* Slightly smaller heading size */
+  }
+
+  .tilted-box ul li {
+    font-size: 0.9rem; /* Slightly smaller text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .tilted-box {
+    padding: 10px; /* Further reduce padding */
+    box-shadow: none; /* Simplify appearance on very small devices */
+  }
+
+  .tilted-box:hover {
+    transform: none; /* No hover effect for very small devices */
+  }
+
+  .tilted-box h3 {
+    font-size: 1.1rem; /* Smaller heading size */
+  }
+
+  .tilted-box ul li {
+    font-size: 0.8rem; /* Smaller text size */
+  }
+}
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
