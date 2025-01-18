@@ -64,11 +64,11 @@ body {
 .tilted-box ul {
   list-style-type: none; /* Remove bullet points */
   padding: 0;
+  margin: 0;
 }
 
 .tilted-box ul li {
   font-size: 1rem; /* Adjust font size */
-  margin-bottom: 8px;
   color: white; /* Ensure text is readable */
 }
 
