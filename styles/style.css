@@ -93,6 +93,12 @@ body {
   .tilted-box ul li {
     font-size: 0.9rem; /* Slightly smaller text size */
   }
+  .container h1{
+    font-size: 1.25rem;
+  }
+  .container p{
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -111,6 +117,12 @@ body {
 
   .tilted-box ul li {
     font-size: 0.8rem; /* Smaller text size */
+  }
+  .container h1{
+    font-size: 1.1rem;
+  }
+  .container p{
+    font-size: 0.8rem;
   }
 }
   .grid-container {
